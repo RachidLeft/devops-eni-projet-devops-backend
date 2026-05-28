@@ -10,7 +10,7 @@ env:
     PORT: 3000
     NODE_ENV: test
 
-job:
+jobs:
     test:
         name: Test
         runs-on: ubuntu-latest
