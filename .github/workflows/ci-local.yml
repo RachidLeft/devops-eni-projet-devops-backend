@@ -42,5 +42,12 @@ jobs:
 
             - name: Test
               run: npm test
+
+            - name: Upload coverage artifact
+              uses: actions/upload-artifact@v4
+              with:
+                name: coverage-report
+                path: coverage/
+                retention-days: 7
             
 
